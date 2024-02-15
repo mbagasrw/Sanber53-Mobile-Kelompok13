@@ -1,4 +1,5 @@
 *** Settings ***
+Resource                               ../SignInPage/signInValid-page.robot
 Resource                               ../base/base-search.robot
 Variables                              ../SignInPage/signIn-locator.yaml
 Variables                              search-locator.yaml
