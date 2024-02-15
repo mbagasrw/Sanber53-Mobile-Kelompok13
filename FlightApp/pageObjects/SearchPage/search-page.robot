@@ -22,6 +22,7 @@ Click Search Button on Home Page
     Click Element                      locator=//android.widget.Button[@resource-id="com.example.myapplication:id/button6" and @text="Search"]
 
 Input BookingId
+    Wait Until Element Is Visible      locator=${search_input}
     Input Text                         locator=${search_input}    text=DA935
 
 Click Search Button on Search Page
