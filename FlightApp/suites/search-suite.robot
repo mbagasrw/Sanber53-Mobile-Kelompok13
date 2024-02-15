@@ -4,8 +4,15 @@ Resource             ../pageObjects/SignInPage/signInValid-page.robot
 Resource             ../pageObjects/SearchPage/search-page.robot
 
 *** Test Cases ***
-Search with Valid Data
+SignIn with Valid Data
     Open Flight App
+    Click SignIn Button On Home Page
+    Input Username Cred
+    signInValid-page.Input Password
+    Click SignIn Button On Login Page Validd
+    Verify User Is Success Logged In
+
+Search with Valid Data
     Click Search Button on Home Page
     Input BookingId
     Click Search Button on Search Page
