@@ -5,6 +5,7 @@ Resource             ../pageObjects/SearchPage/search-page.robot
 
 *** Test Cases ***
 Search with Valid Data
+    Open Flight App
     Click Search Button on Home Page
     Input BookingId
     Click Search Button on Search Page
