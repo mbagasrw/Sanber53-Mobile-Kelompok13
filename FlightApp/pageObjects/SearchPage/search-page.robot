@@ -14,6 +14,9 @@ Input Password
 Click Sign In Button On Login Page Valid
     Click Element                      locator=//android.widget.Button[@resource-id="com.example.myapplication:id/signIn"]
 
+Verify User Is Succesfully Logged In
+    Wait Until Page Contains            text="Success"
+
 Click Search Button on Home Page
     Click Element                      locator=//android.widget.Button[@resource-id="com.example.myapplication:id/button6" and @text="Search"]
 
