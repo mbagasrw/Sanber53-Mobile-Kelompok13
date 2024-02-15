@@ -1,5 +1,5 @@
 *** Settings ***
-Resource                               ../base/base.robot
+Resource                               ../base/base-search.robot
 Variables                              signIn-locator.yaml
 Variables                              search-locator.yaml
 
