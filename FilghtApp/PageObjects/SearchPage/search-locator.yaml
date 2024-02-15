@@ -1,1 +1,0 @@
-search_btn: //android.widget.Button[@resource-id="com.example.myapplication:id/button6" and @text="Search"]
