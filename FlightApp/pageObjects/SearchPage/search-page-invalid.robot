@@ -22,6 +22,7 @@ Click Search Button on Home Page
     Click Element                      locator=//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]
 
 Input BookingId Invalid
+    Wait Until Element Is Visible      locator=${search_input}
     Input Text                         locator=${search_input}    text=ABC123
 
 Click Search Button on Search Page Invalid
