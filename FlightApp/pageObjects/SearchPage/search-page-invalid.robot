@@ -21,11 +21,11 @@ Verify User Is Success Logged In
 Click Search Button on Home Page
     Click Element                      locator=//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]
 
-Input BookingId
-    Input Text                         locator=${search_input}    text=DA935
+Input BookingId Invalid
+    Input Text                         locator=${search_input}    text=ABC123
 
-Click Search Button on Search Page
+Click Search Button on Search Page Invalid
     Click Element                      locator=//android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]
 
-Verify User Is Succesfully Search 
-    Wait Until Page Contains            text="Toronto to Paris"
+Verify User Is Fail To Search 
+    Wait Until Page Contains            text="Please enter valid Flight Number"

@@ -1,7 +1,7 @@
 *** Settings ***
 Resource             ../pageObjects/HomePage/home-page.robot
 Resource             ../pageObjects/SignInPage/signInValid-page.robot
-Resource             ../pageObjects/SearchPage/search-page.robot
+Resource             ../pageObjects/SearchPage/search-page-invalid.robot
 
 *** Test Cases ***
 SignIn with Valid Data
@@ -12,8 +12,8 @@ SignIn with Valid Data
     Click SignIn Button On Login Page Validd
     Verify User Is Success Logged In
 
-Search with Valid Data
+Search with Invalid Data
     Click Search Button on Home Page
-    search-page.Input BookingId
-    Click Search Button on Search Page
-    Verify User Is Succesfully Search
+    search-page-invalid.Input BookingId Invalid
+    Click Search Button on Search Page Invalid
+    Verify User Is Fail To Search
